@@ -1,0 +1,80 @@
+/* ==========================================================================
+   COLOR: MIDNIGHT-BLUE #1D1546 - #34495e 
+========================================================================== */ 
+a, .text-color {
+    color: #4c7095;
+}
+a:hover, .text-color:hover {
+    color: #34495e;
+}
+
+.color-bg {
+    background-color: #34495e;
+}
+
+/*------------------------------------------*/
+/*   Red Buttons 
+/*------------------------------------------*/
+
+
+
+/*------------------------------------------*/
+/*   Header Solid Bg
+/*------------------------------------------*/
+.solid-bg{
+    background:none;
+    background-color: #4c7095;
+}
+
+.navbar-nav>li>a.btn-white{
+    color: #1D1546;
+}
+
+/*------------------------------------------*/
+/*   Header App
+/*------------------------------------------*/
+.type .hero-section span{
+    background-color: #34495e;
+}
+
+/*------------------------------------------*/
+/*   Navbar Links Menu
+/*------------------------------------------*/
+.is-scrolling .navbar-nav>.active>a, .is-scrolling .navbar-nav>.active>a:hover, .is-scrolling .navbar-nav>.active>a:focus {
+    color: #34495e;
+    background-color: transparent;
+}
+
+/*------------------------------------------*/
+/*   Pricing Tab
+/*------------------------------------------*/
+.pricing-tab {
+    border: 1px solid #565895;
+    background: #1D1546;
+}
+
+.pricing-tab .ribbon .popular{
+    background-color: #897CA7;
+}
+
+/*------------------------------------------*/
+/*   Team
+/*------------------------------------------*/
+.team-img .img-icons span i:hover{
+    color: #1D1546;
+}
+
+/*------------------------------------------*/
+/*   Signup-Divider & Fast-Reg
+/*------------------------------------------*/
+.signup-divider .form-control:focus{
+    border-color: #4c7095;
+}
+
+.fast-reg .form-control:focus{
+    box-shadow: none;
+}
+
+
+
+

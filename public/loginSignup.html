@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Material Login Form</title>
+
+
+      <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900|RobotoDraft:400,100,300,500,700,900'>
+      <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
+      <script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
+      <script src="js/userAuthentication.js"></script>
+      <link rel="stylesheet" href="css/loginPage.css">
+
+
+</head>
+
+<body>
+<!-- Mixins-->
+<!-- Pen Title-->
+<div class="pen-title">
+  <h1>CoDIY Login/Signup</h1>
+</div>
+<div class="rerun"></div>
+<div class="container">
+  <div class="card"></div>
+  <div class="card">
+    <h1 class="title">Login</h1>
+    <div>
+      <div class="input-container">
+        <input type="text" id="loginUsername" required="required"/>
+        <label for="Username">Username</label>
+        <div class="bar"></div>
+      </div>
+      <div class="input-container">
+        <input type="password" id="loginPassword" required="required"/>
+        <label for="Password">Password</label>
+        <div class="bar"></div>
+      </div>
+      <div class="button-container">
+        <button onClick = "loginAccount()"><span>Go</span></button>
+      </div>
+    </div>
+  </div>
+  <div class="card alt">
+    <div class="toggle"></div>
+    <h1 class="title">Register
+      <div class="close"></div>
+    </h1>
+    <div>
+      <div class="input-container">
+        <input type="text" id="userNameField" required="required"/>
+        <label for="Username">Username</label>
+        <div class="bar"></div>
+      </div>
+      <div class="input-container">
+        <input type="password" id="passwordField" required="required"/>
+        <label for="Password">Password</label>
+        <div class="bar"></div>
+      </div>
+      <div class="input-container">
+        <input type="password" id="2ndPasswordField" required="required"/>
+        <label for="Repeat Password">Repeat Password</label>
+        <div class="bar"></div>
+      </div>
+      <div class="button-container">
+        <button onClick = "createAccount()"><span>Next</span></button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- CodePen--><a id="codepen" href="index.html" title="Follow me!"><i class="fa fa-home fa-3x"></i></a>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+    <script src="js/index.js"></script>
+
+</body>
+
+
+</html>

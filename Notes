@@ -1,0 +1,99 @@
+[Beginning of Prompt]
+
+Create new project code:
+
+    Prompt for a project name (No spaces)
+    
+    Prompt for project title
+    
+    Prompt for a project description
+    
+    Prompt for a difficulty
+    
+    Text areas asking for:
+        *Note: Want to have (Optional?) text options to desc the below stuff
+        JavaScript
+        
+        Html
+        
+        Css
+        
+        Completed Code
+        
+[End of Prompt]        
+        
+        
+        
+        
+[Beginning of Backend]       
+
+            Backend:
+                    
+                    Creates new folder in /database with given project name
+                    
+                    Inside project folder:
+                        *FileNames surrounded by: () are changed to  the corresponding name prompted for
+                        
+                        projectTitle.txt [Holds title of project] --Each folder has a projectTitle.txt file named the same
+                        
+                        projectDescription.txt [Holds the description for the project] --Each folder has a projectDescription.txt file named the same
+                        
+                        projectDifficulty.txt [Holds a difficulty value for the project stored as a number 1-4] -- Each folder has a projecDifficulty.txt fike named the same
+                        
+                        
+                        //Database management
+                        
+                        (projectName).txt [Holds the completed code]
+                        
+                        "js" + (projectName).txt [Holds the JavaScript Code] --If no JS is present, this file should not be created
+                        
+                        "html" + (projectName).txt [Holds the HTML Script] -- If no HTML is present, this file should not be created
+                        
+                        "css" + (projectName).txt [Holds the CSS Scripting] -- If not CSS is present, this file should not be created
+[End of Backend]
+
+                        
+    
+
+[Beginning of Formatting]
+
+        Formatting:
+        
+            Project Title
+                -Difficulty [Color coded box under project title]
+                
+            Project Description
+            
+                
+                *If JS is present:
+                    
+                    Bold Header displaying "JavaScript"
+                        - "JS Loaded into non-editable textarea using same editor as IDE
+                        * On click of this textarea, IDE with full code should open
+                        
+                *If HTML is present:
+                
+                     Bold Header displaying "HTML"
+                        - "HTML Loaded into non-editable textarea using same editor as IDE
+                        * On click of this textarea, IDE with full code should open
+
+                *If CSS is present:
+                
+                     Bold Header displaying "CSS"
+                        - "CSS Loaded into non-editable textarea using same editor as IDE
+                        * On click of this textarea, IDE with full code should open
+                    
+                    
+        @ Bottom of page:
+            
+            Display a button saying "View Code"
+                - On click, pull up entire IDE 
+                
+
+[End of Formatting]
+                        
+                        
+[About Us Page]
+    images
+    Positions
+    Desc

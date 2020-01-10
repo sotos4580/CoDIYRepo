@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+button.accordion {
+    background-color: #F5A2CD; /*Controls the background color of each Accordion Folder*/
+    color: #000; /*Controls he color of the text of each Accordion Folder*/
+    cursor: pointer; /*Controls the style of cursor the user has when they mouse ofer the Accordion Folder*/
+    padding: 20px; /*Creates a uniform buffer around the text/ icon that is the background*/
+    width: 100%; /*Controls how much of the given Output Space the Accordion will take up*/
+    border: none;
+    text-align: left; /*Controls the side the text of the Accordion Folder*/
+    outline: none; /*Ability to outline*/
+    font-size: 15px;/*Controls the size of text on the Accordion Folder*/
+    transition: 0.5s; /*Controls the amount of time it takes to transition from the original color of the background of the Accordion Folder to the new color you set when you hover (See below Code)*/
+}
+
+button.accordion.active, button.accordion:hover {
+    background-color: #9DC4F1; /*Controls the color of the folder when your mouse hovers over it*/
+}
+
+button.accordion:after {
+    content: '\02795';
+    font-size: 14px; /*Controls the size of the icon/ button*/
+    color: #000; /*Controls the color of the expand icon*/
+    float: right; /*Controls what side the icon/button is on of the Folder*/
+    margin-left: 0px;
+}
+
+button.accordion.active:after {
+    content: "\2796"; /*Identiication of the icon after you open that Accordion Folder (This "\2796" is the code for the "-" sign you see after you open that Folder)*/
+}
+
+div.panel {
+    padding: 0 20px; /*Controls how far from the left the Contents text is*/
+    background-color: White; /*Color of the background of the Contents of the Accordion Folder*/
+    max-height: 0; /*Controls amount of space below Accordion Folder before you open it*/
+    overflow: hidden; /*If you feel you need a scroll bar because the text yuo inserted is too big, change 'hidden' tp 'scroll'*/
+    transition: 0.8s ease-in-out; /*Controls how long it takes to open the Accordion Menu*/
+    opacity: 0;
+}
+
+div.panel.show {
+    opacity: 1;
+    max-height: 500px; /*Controls the size of the Accordion Folder you have opened*/  
+}
+</style>
+</head>
+<body>
+
+<h2>Accordion with symbols</h2><!--This is the title for the Accordion Page-->
+<button class="accordion">Folder 1</button><!--Name of the first Folder of the Accordion-->
+<div class="panel"><!--Sets the Div to follow the panel class we defined above (div.panel and div.panel.show)-->
+  <p>Ability to insert desired text here...</p><!--Contents of the first Accordion Slot-->
+</div>
+
+<button class="accordion">Folder 2</button><!--Name of the second Folder of the Accordion-->
+<div class="panel"><!--Sets the Div to follow the panel class we defined above (div.panel and div.panel.show)-->
+  <p>...and here...</p><!--Contents of the second Accordion Slot-->
+</div>
+
+<button class="accordion">Folder 3</button><!--Name of the third Folder of the Accordion-->
+<div class="panel"><!--Sets the Div to follow the panel class we defined above (div.panel and div.panel.show)-->
+  <p>...and also here</p><!--Contents of the third Accordion Slot-->
+</div>
+
+<script>
+var accord = document.getElementsByClassName("accordion");//This calls all elements with the Class name of accordion, and sets it to the value of accord, storing each one in an array slot 
+//*See Help Below for some info on arrays*
+var j;//initializes the variable j with a null value
+
+for (j = 0; j < accord.length; j++) {
+    accord[j].onclick = function(){
+        this.classList.toggle("active");
+        this.nextElementSibling.classList.toggle("show");
+  }
+//The above is a loop to go through the accord array and display the elements in each array slot starting at value j, and going until j is equal to the number of array slots
+    
+//Help: Arrays start at value zero, and go un by 1 per slot
+    //Array slots store all information related to that object in one single 		slot
+    //
+}
+</script>
+
+</body>
+</html>

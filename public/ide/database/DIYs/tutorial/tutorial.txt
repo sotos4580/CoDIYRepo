@@ -1,0 +1,39 @@
+<!-- this is a comment -->
+<html> <!-- Html open tag (Initializes the HTML for the Site)-->
+  <head> <!-- Header Tags in HTML are used to load in requirements for the site -->
+    
+    <link rel="stylesheet/css" href = './lib/w3.css' /> <!-- This adds in the Style for the site -->
+  </head>
+  
+  
+  	<body> <!-- Body tags are used to define the main portion of the website -->
+      
+      <script> //JavaScript is written within script tags
+      
+      	function myFunction() //Instantiates function named "myFunction" with no parameters
+        {
+          
+          var e = 3; //Creates a new variable named 'e' with a value of 3
+          alert(e); //Alerts the value of 'e' in a popup window
+          
+          //End of myFunction
+          
+        }
+        
+        myFunction(); // This runs the myFunction created above
+      
+      </script>
+      
+      <div> <!-- Div tags define elements for parts of the website to be grouped within -->
+        
+        <h1> <!--H1 tags show text within them in Bold (Header tags) -->
+          
+          This is text <!-- Text within the header tag displayed on site -->
+          
+        </h1> <!-- Close of h1 tag -->
+        
+      </div>
+      
+  </body>
+  
+</html>

@@ -1,0 +1,7 @@
+/* W3.CSS 2.83 Nov 2016 by Jan Egil and Borge Refsnes */
+button,input,select,textarea{font:inherit;margin:0}optgroup{font-weight:bold}
+html,body{font-family:Verdana,sans-serif;font-size:15px;line-height:1.5}html{overflow-x:hidden}
+.w3-navbar{list-style-type:none;margin:0;padding:0;overflow:hidden}
+.w3-green,.w3-hover-green:hover{color:#fff!important;background-color:#565697!important}
+.w3-white,.w3-hover-white:hover{color:#000!important;background-color:#fff!important}
+.w3-text-green,.w3-hover-text-green:hover{color:#565697!important}

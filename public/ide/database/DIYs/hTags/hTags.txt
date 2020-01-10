@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head> <!-- Header Tags in HTML are used to load in requirements for the site -->
+    
+    <link rel="stylesheet/css" href = './lib/w3.css' /> <!-- This adds in the Style for the site -->
+  </head>
+  
+  
+  <body> <!-- Body tags are used to define the main portion of the website -->
+      
+      <script> //JavaScript is written within script tags
+      
+      </script>
+
+<!-- The H1 - H6 Tags are used for headings of different sizes, You dont have to use all 6 before you use them again-->
+    <h1>Hello World!</h1>
+    <h2>Hello World!</h2>
+    <h3>Hello World!</h3>
+    <h4>Hello World!</h4>
+    <h5>Hello World!</h5>
+    <h6>Hello World!</h6>
+    
+  </body>
+</html>

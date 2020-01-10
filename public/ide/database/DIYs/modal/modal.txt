@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  
+/*Comments look like this within the Style Tag*/
+  
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/*Adds Animations*/
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:2} 
+    to {top:0; opacity:4}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:2}
+    to {top:0; opacity:4}
+}
+
+/*Button to close the Modal*/
+.close {
+    color: blue;
+    float: right;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #ff0000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    color: white; /*This allows you to change the color of the text in the Modal Header*/
+    padding: 4px 20px; /*This allows you to change the amount of space around the contents in the header*/
+    background-color: #ff9c00; /*This allows you to change the color of the background that the Modal Header is on*/
+}
+
+.modal-body {padding: 4px 20px;} /*This allows you to change the amount of space around the contents in the body Element*/
+
+.modal-footer {
+    color: white; /*This allows you to change the color of the text in the Modal Footer*/
+    padding: 4px 20px; /*This allows you to change the amount of space around the contents in the footer*/
+    background-color: #ff9c00; /*This allows you to change the color of the background that the Modal Footer is on*/
+}
+</style>
+</head>
+<body>
+
+<h2>Fully Animated Modal With Styling</h2>
+
+<!--Button To Open Your Modal-->
+<button id="myBtn">See Your Modal</button>
+
+<!--The Modal-->
+<div id="firstModal" class="modal">
+
+  <!--Content of the Modal-->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">Changeable Close Text</span>
+      <h2>Header of the Modal</h2>
+    </div>
+    <div class="modal-body">
+      <p>Insert Possible Text Here</p>
+      <p>More Text Goes Here</p>
+    </div>
+    <div class="modal-footer">
+      <h3>Footer of the Modal</h3>
+    </div>
+  </div>
+
+</div>
+
+<script>
+//Get the Modal
+var modal = document.getElementById('firstModal');
+
+//Get the button that you created that opens the modal
+var btn = document.getElementById("myBtn");
+
+//Get the <span> element created that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+//Opens the Modal When you click on the button you created 
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+//Closes the Modal When you click on <span> Element you created in top right corner
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+//If you click anywhere outside the Modal, the Modal will close
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+.CodeMirror-hints {
+  position: absolute;
+  z-index: 10;
+  overflow: hidden;
+  list-style: none;
+
+  margin: 0;
+  padding: 2px;
+
+  -webkit-box-shadow: 2px 3px 5px rgba(0,0,0,.2);
+  -moz-box-shadow: 2px 3px 5px rgba(0,0,0,.2);
+  box-shadow: 2px 3px 5px rgba(0,0,0,.2);
+  border-radius: 1px;
+  border: 1px solid #282C34;
+
+  background: #282C34;
+  font-size: 90%;
+  font-family: consolas,monospace;
+
+  max-height: 20em;
+  overflow-y: auto;
+}
+
+.CodeMirror-hint {
+  margin: 0;
+  padding: 0 4px;
+  border-radius: 20px;
+  white-space: pre;
+  color: #ABB2C0;
+  cursor: pointer;
+}
+
+li.CodeMirror-hint-active {
+  background: #3A3F4B;
+  color: #ABB2C0;
+}

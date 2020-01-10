@@ -1,0 +1,16 @@
+{
+  "name": "coDIY",
+  "version": "0.0.0",
+  "description": "DIY website for BPA",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "latest",
+    "socket.io": "latest",
+    "crypto-js": "latest",
+    "cors": "latest"
+  },
+  "author": "Sean Kim"
+}
